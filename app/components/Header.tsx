@@ -1,14 +1,14 @@
-import React from "react";
 import { navLink } from "../constant";
 import Link from "next/link";
 import { CircleUserRound, Menu, Search, ShoppingCart } from "lucide-react";
+import { use, useState } from "react";
 
 const Header = () => {
   return (
-    <header className="w-full absolute p-4 md:p-4 border border-black">
-      <nav className="flex gap-6 bg-white p-4 w-full justify-center md:gap-14 items-center">
+    <header className="w-full absolute p-1 md:p-4 text-black">
+      <nav className="flex gap-6 bg-white p-2 md:4 w-full justify-center md:gap-14 items-center">
         <div className="flex gap-4 md:gap-6">
-          <button className="lg:hidden">
+          <button type="button" className="lg:hidden">
             <Menu size={35} />
           </button>
           <Link href="/" className="text-3xl md:text-4xl font-extrabold">
